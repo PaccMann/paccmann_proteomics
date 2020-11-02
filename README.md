@@ -20,6 +20,18 @@ Use conda:
 conda env create -f conda.yml
 ```
 
+Activate the environment:
+
+```console
+conda activate paccmann_proteomics
+```
+
+You are good to go and `paccmann_proteomics` is installed in editable mode for development:
+
+```python
+import paccmann_proteomics
+```
+
 ## Model Architecture
 
 ![alt text](figures/architecture_small.png "RoBERTa protein transformer architecture")
