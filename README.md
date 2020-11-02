@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/PaccMann/paccmann_proteomics.svg?branch=master)](https://travis-ci.com/PaccMann/paccmann_proteomics)
-
 # paccmann_proteomics
 
 PaccMann Protein Language Modeling for: Protein Classification, Protein-Protein Binding and Protein Sequence Annotation Tasks.
