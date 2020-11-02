@@ -1,0 +1,7 @@
+dist: trusty
+services:
+  - docker
+before_script:
+  - docker build -f .travis/Dockerfile -t paccmann_proteomics .
+script:
+  - docker run -it paccmann_proteomics python3 -c "import paccmann_proteomics"

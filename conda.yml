@@ -1,0 +1,19 @@
+name: paccmann_proteomics
+dependencies:
+  - python>=3.6,<3.8
+  - pip>=19.1
+  - pip:
+    - numpy==1.16.1
+    - torch>=1.3
+    - transformers==3.0.2
+    - tokenizers==0.8.0
+    - torchvision==0.5
+    - tensorboardX==2.0
+    - pandas>1.0
+    - loguru==0.5.3
+    - tape_proteins==0.4
+    - seaborn==0.11.0
+    - scikit-learn==0.23.2
+    - scipy==1.5.3
+    - seqeval
+    - -e .

@@ -1,0 +1,1 @@
+"""Initialization for `paccmann_proteomics` module."""
