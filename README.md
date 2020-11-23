@@ -42,6 +42,15 @@ An examplary RoBERTa architecture is pre-trained by a mixture of binding and non
 Scripts for model training and evaluation described in the pre-print can be found [here](./scripts).
 Related configuration files can be found [here](./training_configs).
 
+### Launch language modeling pretraining script with a bash command from `scripts` directory:
+`bash run_language_modeling_script.sh` (might need to adjust paths to your data and already pre-trained model checkpoints, if necessary)
+
+### Launch sequence level finetuning task with:
+`bash run_seq_clf_script.sh`
+
+### Launch token level classification/annotation finetuning task with:
+`bash run_token_clf_script.sh`
+
 ## Pre-trained models and Data
 Pre-trained models and prepared datasets are available at: https://ibm.ent.box.com/v/paccmann-proteomics-data, see `data/pretraining` and `data/fine_tuning` for model pre-training datasets (SwissProt, Pfam, STRING) and the data for model fine-tuning tasks (localization, solubility, PPI, etc). Trained Byte Pair Encoding tokenizers available at `data/tokenization`
 
