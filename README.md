@@ -1,4 +1,4 @@
-# paccmann_proteomics
+# Paccmann Proteomics
 
 PaccMann Protein Language Modeling for: Protein Classification, Protein-Protein Binding and Protein Sequence Annotation Tasks.
 
@@ -38,11 +38,14 @@ import paccmann_proteomics
 
 An examplary RoBERTa architecture is pre-trained by a mixture of binding and non-binding protein sequences, using only the MLM objective. Byte-pair encoding with a 10k token vocabulary enables inputting 64% longer protein sequences compared to character level embedding. `E_i` and `T_i` represent input and contextual embeddings for token `i`. `[CLS]` is a special token for classification-task output, while `[SEP]` separates two non-consecutive sequences.
 
-## Info
-
-Pre-print with current status of the project can be found [here](https://www.overleaf.com/read/nkbwcfsswbmy).
-
+## Training Scripts
 Scripts for model training and evaluation described in the pre-print can be found [here](./scripts).
 Related configuration files can be found [here](./training_configs).
 
-Raw data and models will be soon available. Contact [us](mailto:mfilipav@gmail.com,drugilsberg@gmail.com,joriscadow@gmail.com) if you need them now :smiley:.
+## Pre-trained models and Data
+Pre-trained models and prepared datasets are available at: https://ibm.ent.box.com/v/paccmann-proteomics-data, see `data/pretraining` and `data/fine_tuning` for model pre-training datasets (SwissProt, Pfam, STRING) and the data for model fine-tuning tasks (localization, solubility, PPI, etc). Trained Byte Pair Encoding tokenizers available at `data/tokenization`
+
+Contact [us](mailto:mfilipav@gmail.com,drugilsberg@gmail.com,joriscadow@gmail.com) if you have further questions :smiley:.
+
+## Preprint
+Our preprint was accepted to Machine Learning for Structural Biology (MLSB) workshop at NeurIPS 2020, and [can be found here](paper/filipavicius_2020_neurips_mlsb.pdf).
