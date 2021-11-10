@@ -1,7 +1,7 @@
 name: paccmann_proteomics
 dependencies:
   - python>=3.6,<3.8
-  - pip>=19.1
+  - pip>=19.1,<20.3
   - pip:
     - numpy==1.16.1
     - torch>=1.3
